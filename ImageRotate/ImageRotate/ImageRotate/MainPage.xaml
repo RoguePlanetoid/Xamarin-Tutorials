@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ImageRotate"
+             x:Class="ImageRotate.MainPage">
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Entry Grid.Row="0" x:Name="Value" Margin="10" Completed="Value_Completed"/>
+        <Image Grid.Row="1" x:Name="Display" Margin="10" Aspect="AspectFit" 
+		HorizontalOptions="Center" VerticalOptions="Center"/>
+        <StackLayout Grid.Row="2">
+            <Label Text="X" Margin="10"/>
+            <Slider x:Name="RotateX" Minimum="0" Maximum="360" ValueChanged="RotateX_ValueChanged" Margin="10"/>
+            <Label Text="Y" Margin="10"/>
+            <Slider x:Name="RotateY" Minimum="0" Maximum="360" ValueChanged="RotateY_ValueChanged" Margin="10"/>
+            <Label Text="Z" Margin="10"/>
+            <Slider x:Name="RotateZ" Minimum="0" Maximum="360" ValueChanged="RotateZ_ValueChanged" Margin="10"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
+    
