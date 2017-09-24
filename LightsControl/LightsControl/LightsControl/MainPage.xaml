@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LightsControl"
+             x:Class="LightsControl.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <local:Lights Grid.Row="0" x:Name="Display" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Grid Grid.Row="1" Margin="10">
+            <Button Text="Show" HorizontalOptions="Center" WidthRequest="100" Clicked="Show_Clicked"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>
+    
+    
